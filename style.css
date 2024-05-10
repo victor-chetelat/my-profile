@@ -1,0 +1,121 @@
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #6d7fcc;
+  --accent-color: #00939C;
+  --background-color: #cc6d6d61;
+  --text-color: #575f7d;
+  --container-padding: 20px;
+  --container-max-width: 800px;
+  --button-radius: 5px;
+  --font-family-base: 'Lora', serif;
+}
+
+
+*, *:before, *:after {
+  margin: 20;
+  padding: 0;
+  box-sizing: border-box;
+}
+.profile-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+}
+
+.profile-pic {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    border: 5px solid #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-size: 18px;
+  background: #deddd966;
+  color: var(--text-color);
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 40px auto;
+  background: #e74c34;
+  padding: var(--container-padding);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-discover {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: var(--button-radius);
+  display: inline-block;
+  transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.btn-discover:hover {
+  background-color: darken(var(--primary-color), 10%);
+  transform: translateY(-2px);
+}
+
+header, section, footer {
+  background: #f0d7d7;
+  margin: 20px 0;
+  padding: var(--container-padding);
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+
+@media (max-width: 760px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 95%;
+    margin: 10px auto;
+  }
+}
+
+h1, h2 {
+  color: var();
+}
+
+a {
+  color: var(); 
+  text-decoration: none;
+}
+
+a:hover {
+  color: darken(var(--accent-color), 20%);
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer {
+  background: #333;
+  color: white;
+}
+
+footer ul li {
+  display: inline;
+  margin-right: 10px;
+}
